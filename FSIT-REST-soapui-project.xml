@@ -40,7 +40,7 @@ context.testCase.testSuite.setPropertyValue("token",accessToken)
 </scriptText></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="a558e114-10e3-4bac-a7a8-26258d135908" name="Valid HTTP Status Codes"><con:configuration><codes>200
 </codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="reading data from excel" id="2e0e66b7-8883-4780-8e46-abe06c05e3b1"><con:settings/><con:config><script>import java.io.*
 import jxl.*
-def path=new File("C://Users//ABHI//Desktop//Login.xls");
+def path=new File("C:\\Users\\ABHI\\Desktop\\Login.xls");
 def workbook=Workbook.getWorkbook(path)
 def workSheet=workbook.getSheet(0)
 Cell field1=workSheet.getCell(0,1)
@@ -152,7 +152,7 @@ assert prodid == productid</scriptText></con:configuration></con:assertion><con:
 import groovy.json.JsonSlurper
 import jxl.*
 import jxl.write.*
-File path = new File("C:\\Users\\ABHI\\Desktop\\ok1.ods");
+File path = new File("C:\\Users\\ABHI\\Desktop\\products.xls");
 WritableWorkbook writebook = Workbook.createWorkbook(path);
 writebook.createSheet("Sheet1", 0);
 WritableSheet writesheet = writebook.getSheet(0);
